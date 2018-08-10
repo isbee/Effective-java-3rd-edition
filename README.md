@@ -6,7 +6,28 @@
 
 ## Chapter 1 : Introduction
 * 이 책은 performance를 다루기 보단 clear, maintainable, flexible 한 코드 작성법에 대해 다룬다
-* 몇몇 chapter 나 item 이 성능에 관련되어 있긴 하지만, 그것 자체를 clear 하게 사용하는 방법을 다룸
+* 몇몇 chapter, item 이 성능에 관련되어 있긴 하지만 그것 자체를 clear 하게 사용하는 방법을 다룸
 
 ## Chapter 2 : Creating And Destroying Objects
-* [Item 1](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter01/Item01.md) : Consider static factory methods instead of constructors
+* [Item 1](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item01.md) : 
+Consider static factory methods instead of constructors
+* [Item 2](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item02.md) : 
+Consider a builder when faced with many constructor parameters
+* [Item 3](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item03.md) : 
+Enforce the singleton property with a private constructor or an enum type
+* [Item 4](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item04.md) : 
+Enforce noninstantiability with a private constructor
+* [Item 5](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item05.md) : 
+Prefer dependency injection to hardwiring resources
+* [Item 6](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item06.md) : 
+Avoid creating unnecessary objects
+* [Item 7](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item07.md) : 
+Eliminate obsolete object references
+* [Item 8](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item08.md) : 
+Avoid finalizers and cleaners
+* [Item 9](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter02/Item09.md) : 
+Prefer try-with-resources to try-finally
+
+## Chapter 3 : Methods Common to All Objects
+* [Item 10](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter03/Item10.md) : 
+Obey the general contract when overriding equals
