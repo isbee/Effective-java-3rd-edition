@@ -30,4 +30,16 @@ Prefer try-with-resources to try-finally
 
 ## Chapter 3 : Methods Common to All Objects
 * [Item 10](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter03/Item10.md) : 
-Obey the general contract when overriding equals
+Obey the general contract when overriding `equals`
+* [Item 11](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter03/Item11.md) : 
+Always override `hashCode` when you override `equals`
+* [Item 12](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter03/Item12.md) : 
+Always override `toString`
+* [Item 13](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter03/Item13.md) : 
+Override `clone` judiciously
+* [Item 14](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter03/Item14.md) : 
+Consider implementing `Comparable`
+
+## Chapter 4 : Classes and Interfacs
+* [Item 15](https://github.com/isbee/Effective-java-3rd-edition/blob/master/Chapter04/Item15.md) : 
+Minimize the accessibility of classes and members
