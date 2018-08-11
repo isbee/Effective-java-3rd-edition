@@ -4,8 +4,8 @@
 * `Cloneable` 은 `clone` method 가 없는 mixin interface 다. 따라서 어떤 객체가 `Cloneable` 을 구현했더라도 reflection 을 통해 
 `clone` 을 호출할 수 있다는 **보장이 없다.**
 
-* 일반적으로 interface 를 구현한다는 것은 class 가 '어떤 일을 할 수 있는가' 를 말해주는 것인데, `Cloneable` 은 superclass `Object` 의 
-protected method `clone` 을 수정하기 위한 것이므로 굉장히 atypical 하다.
+* 일반적으로 interface 를 구현한다는 것은 client 에게 해당 class 가 '어떤 일을 할 수 있는가' 를 말해주는 것인데, `Cloneable` 은 
+superclass `Object` 가 **이미 구현한** protected method `clone` 을 override 하기 위한 것이므로 굉장히 atypical 하다.
 
 ### Copy constructor, copy factory 라는 좋은 대안이 있다
 * 아래에서 다루는 여러가지 사항들을 고려하지 않아도 된다
