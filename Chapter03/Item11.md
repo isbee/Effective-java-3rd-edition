@@ -9,13 +9,13 @@
 2. 남아있는 **모든** significant fields 에 대해 아래 작업을 수행한다
 
     1. 해당 field 로 int 타입 hash code `c` 를 연산한다
-        1. field 가 primitive type 이면 `Type.hashCode(f)`
+        1. field 가 **primitive type** 이면 `Type.hashCode(f)`
         
-        2. field 가 object reference 이면서, 이것의 `equals` 가 자신이 갖고 있는 field 에 재귀적인 `equals` 호출을 한다면 **똑같이**
+        2. field 가 **object reference** 이면서, 이것의 `equals` 가 자신이 갖고 있는 field 에 재귀적인 `equals` 호출을 한다면 **똑같이**
         해당 field 의 `hashCode` 를 재귀적으로 호출하자. 만일 `equals` 가 좀 더 복잡한 구현으로 되있다면, 해당 field 의 
         **canonical representation** 에 대해 `hashCode` 를 호출한다. (e.g. null 의 canonical representation 은 0 )
         
-        3. field 가 array 면 significant element 에 대해 위 2가지 rule 을 적용하고, 2.ii 로 hash code 값들을 결합한다. 
+        3. field 가 **array** 면 significant element 에 대해 위 2가지 rule 을 적용하고, 2.ii 로 hash code 값들을 결합한다. 
         만일 significant element 가 하나도 없다면 hash code 를 0 이 아닌 임의의 상수로 설정하고, 모든 요소가 significant 하다면 
         `Arrays.hashCode` 를 사용하자
         
